@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@parcel/config-default": "^2.0.0",
+    "@parcel/core": "^2.0.0"
+  }
+}
