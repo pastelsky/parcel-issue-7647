@@ -10,6 +10,12 @@ const require = createRequire(import.meta.url);
 let bundler = new Parcel({
   entries: path.join(__dirname, "..", "project", "index.js"),
   defaultConfig: require.resolve("@parcel/config-default"),
+  targets: {
+    targetA: {
+      distDir: path.join(__dirname, "..", 'project', 'dist'),
+      source: path.join(__dirname, "..", 'project', 'index.js'),
+    }
+  }
 });
 
 try {
